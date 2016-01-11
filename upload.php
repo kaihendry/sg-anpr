@@ -7,7 +7,7 @@ if (! is_uploaded_file($_FILES['f']['tmp_name'])) { die("Upload fail: Missing fi
 
 $name = pathinfo($_FILES['f']['name'], PATHINFO_FILENAME);
 $extension = strtolower(pathinfo($_FILES['f']['name'], PATHINFO_EXTENSION));
-$increment = ''; //start with no suffix
+$increment = 0; //start with no suffix
 
 while(file_exists("$dir/" . $name . '-' . $increment . '.' . "jpg")) { $increment++; }
 
