@@ -68,6 +68,7 @@ curl -F "f=@SCR5199Y.jpg" http://anpr.dabase.com/upload.php
 
 <p><a href=https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Singapore>Wikipedia article on Singaporean number plates</a></p>
 <p>Email <a href=mailto:hendry+anpr@iki.fi>Kai Hendry</a> for enquiries</p>
+<p><a href=https://github.com/kaihendry/sg-anpr>Source code on Github</a></p>
 
 </body>
 </html>

@@ -19,6 +19,7 @@ if (fnmatch("jp*", $extension)) {
 	if ($return) { unlink($incname); die("Not a JPEG"); }
 	$fdir = getcwd() . '/' . $dir;
 	exec("docker run --rm -v $fdir:/data:ro openalpr -j -c sg " . basename($incname), $output, $return);
+	if ($return) { http_response_code(500); die(); }
 	$alpr = json_decode($output[0], true);
 	$alpr["img"] = $incname;
 
