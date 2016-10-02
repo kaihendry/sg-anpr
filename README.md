@@ -22,3 +22,13 @@ Ensure your docker works from that user, e.g. `docker pull openalpr/openalpr`
 		log stdout
 		errors stdout
 	}
+
+# TODO
+
+Speed it up by going direct to running bindings
+https://github.com/openalpr/openalpr/tree/master/src/bindings/go
+
+Have a way to give feedback if it was correct or not.
+
+Do Malaysian version! <https://www.youtube.com/watch?v=CWoGfMMpRFM> Idea being
+we can crowd source Malaysian plates!  <http://paultan.org/2016/09/28/554748/>
