@@ -1,5 +1,14 @@
-# DO NOT USE
+# Start service
 
-There is a remote vulnerability in upload.php that I need to fix. I should just not use PHP to be safer.
+Ensure your docker works from that user, e.g. `docker pull openalpr/openalpr`
 
-	Content-Disposition: form-data; name="f"; filename="12;`uname -a>rce_here.txt`3.jptxt"
+	go run sg-anpr.go
+
+# Test service
+
+	wget http://s.natalian.org/2016-10-02/SKC6322K.jpg
+	curl -F "file=@SKC6322K.jpg" http://localhost:7077/upload
+
+* [Video](https://www.youtube.com/watch?v=fpj6vptUbCA)
+* [More training images needed](https://groups.google.com/forum/#!msg/openalpr/oWU2CvTR7yU/TEsz9LUgBQAJ)
+* [Wikipedia article on Singapore license plates](https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Singapore)
