@@ -1,0 +1,14 @@
+[Unit]
+Description=SG ANPR
+Requires=docker.service
+After=docker.service
+
+[Service]
+User=hendry
+Environment=GOPATH=/home/hendry/go
+ExecStartPre=/usr/bin/docker pull openalpr/openalpr
+WorkingDirectory=/home/hendry/tmp/sg-anpr
+ExecStart=/usr/bin/go run sg-anpr.go
+
+[Install]
+WantedBy=multi-user.target
