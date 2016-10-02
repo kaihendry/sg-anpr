@@ -17,8 +17,8 @@ Ensure your docker works from that user, e.g. `docker pull openalpr/openalpr`
 
 # Caddy configuration for demo
 
-anpr.dabase.com {
-	proxy / localhost:7077
-	log stdout
-	errors stdout
-}
+	anpr.dabase.com {
+		proxy / localhost:7077
+		log stdout
+		errors stdout
+	}
